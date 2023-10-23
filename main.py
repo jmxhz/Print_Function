@@ -31,12 +31,18 @@ def print_04(num1, num2):
     print(f'{num1} + {num2} = {num1 + num2}',end='\n')
 
 
+def print_05(num1, num2):
+    print()
+    print("小数点后取四位，使用format：")
+    print("{} / {} = {:.4f}".format(num1, num2, num1 / num2))
+
+
 num = 10
-num1 = 2**2
-num2 = 2**num
+num1 = 2**num
+num2 = 3**2
 num3 = num1 - num2
 print_01()
 print_02(num)
 print_03(num1, num2)
 print_04(num1, num2)
-
+print_05(num1, num2)
